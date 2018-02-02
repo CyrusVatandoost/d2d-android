@@ -40,7 +40,10 @@
         <!-- Provider Dashboard Activity -->
         <activity
             android:name=".ProviderDashboardActivity"
-            android:label="Provider Dashboard"></activity>
+            android:label="Provider Dashboard" />
+        <!-- Add Event Activity -->
+        <activity android:name=".AddEventActivity"
+                android:label="Host Event"></activity>
     </application>
 
 </manifest>
