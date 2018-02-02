@@ -59,7 +59,8 @@
         <!-- Freelancer Details Activity -->
         <activity
             android:name=".activities.FreelancerActivity"
-            android:label="Freelancer Details"></activity>
+            android:label="Freelancer Details" />
+        <activity android:name=".activities.ProviderEventListActivity"></activity>
     </application>
 
 </manifest>
