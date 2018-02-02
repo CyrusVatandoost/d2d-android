@@ -28,6 +28,6 @@
             android:id="@+id/btnProvider"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Offer Your Services" />
+            android:text="Offer Your Services"/>
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
