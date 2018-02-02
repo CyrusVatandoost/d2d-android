@@ -4,9 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/blackGreen"
     tools:context="c2kxr.host.activities.LoginActivity">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
@@ -26,34 +27,56 @@
             android:id="@+id/imgLogo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:srcCompat="@mipmap/ic_launcher_round" />
+            app:srcCompat="@drawable/hostlogo"
+             />
 
         <EditText
             android:id="@+id/textEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:backgroundTint="@color/dirtyWhite"
             android:ems="10"
             android:hint="Email"
-            android:inputType="textEmailAddress" />
+            android:inputType="textEmailAddress"
+            android:textColor="@color/dirtyWhite"
+            android:textColorHint="@color/dirtyWhite"
+            android:layout_below="@id/imgLogo"
+            />
 
         <EditText
             android:id="@+id/textPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:backgroundTint="@color/dirtyWhite"
             android:ems="10"
             android:hint="Password"
-            android:inputType="textPassword" />
+            android:inputType="textPassword"
+            android:textColor="@color/dirtyWhite"
+            android:textColorHint="@color/dirtyWhite"
+            android:layout_below="@id/textEmail"/>
 
         <Button
             android:id="@+id/btnLogin"
-            android:layout_width="wrap_content"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Login" />
+            android:layout_marginTop="25dp"
+            android:background="@color/dirtyWhite"
+            android:text="Log in"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:layout_below="@id/textPassword"/>
 
         <Button
             android:id="@+id/btnRegister"
-            android:layout_width="wrap_content"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Register" />
-    </LinearLayout>
+            android:layout_marginTop="7dp"
+            android:background="@color/dirtyWhite"
+            android:text="Sign up"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:layout_below="@id/btnLogin"/>
+    </RelativeLayout>
 </android.support.constraint.ConstraintLayout>
