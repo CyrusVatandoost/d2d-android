@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import c2kxr.host.TypefaceUtil;
 import c2kxr.host.R;
 
 public class LoginActivity extends AppCompatActivity {
@@ -12,6 +13,7 @@ public class LoginActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        TypefaceUtil.overrideFont(getApplicationContext(), "SERIF", "fonts/Roboto-Regular.ttf");
         setContentView(R.layout.activity_login);
 
         // login button opens MainActivity
