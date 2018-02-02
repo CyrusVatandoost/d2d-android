@@ -5,7 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-import c2kxr.host.TypefaceUtil;
+import c2kxr.host.util.TypefaceUtil;
 import c2kxr.host.R;
 
 public class LoginActivity extends AppCompatActivity {

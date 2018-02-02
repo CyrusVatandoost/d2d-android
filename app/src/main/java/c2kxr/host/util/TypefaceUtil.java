@@ -1,4 +1,4 @@
-package c2kxr.host;
+package c2kxr.host.util;
 
 import android.content.Context;
 import android.graphics.Typeface;
