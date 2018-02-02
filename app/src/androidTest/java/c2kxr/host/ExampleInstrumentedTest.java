@@ -1,4 +1,4 @@
-package c2kxr.d2d;
+package c2kxr.host;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
