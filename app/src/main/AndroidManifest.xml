@@ -15,20 +15,32 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
+        <!-- Login Activity -->
         <activity
             android:name=".LoginActivity"
             android:theme="@style/AppThemeNoTitle">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
+        <!-- Main Activity -->
         <activity
             android:name=".MainActivity"
-            android:label="Main Activity">
-
-        </activity>
+            android:label="Main Activity" />
+        <!-- Register Activity -->
+        <activity
+            android:name=".RegistrationActivity"
+            android:label="Register" />
+        <!-- Organizer Dashboard Activity -->
+        <activity
+            android:name=".OrganizerDashboardActivity"
+            android:label="Organizer Dashboard" />
+        <!-- Provider Dashboard Activity -->
+        <activity
+            android:name=".ProviderDashboardActivity"
+            android:label="Provider Dashboard"></activity>
     </application>
 
 </manifest>
