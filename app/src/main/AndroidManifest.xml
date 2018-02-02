@@ -37,11 +37,13 @@
         <!-- Organizer Dashboard Activity -->
         <activity
             android:name=".activities.OrganizerDashboardActivity"
-            android:label="Organizer Dashboard" />
+            android:label="Organizer Dashboard"
+            android:parentActivityName=".activities.MainActivity"/>
         <!-- Provider Dashboard Activity -->
         <activity
             android:name=".activities.ProviderDashboardActivity"
-            android:label="Provider Dashboard" />
+            android:label="Provider Dashboard"
+            android:parentActivityName=".activities.MainActivity"/>
         <!-- Add Event Activity -->
         <activity
             android:name=".activities.AddEventActivity"
@@ -59,8 +61,9 @@
         <!-- Freelancer Details Activity -->
         <activity
             android:name=".activities.FreelancerActivity"
-            android:label="Freelancer Details" />
+            android:label="Freelancer Details" 
         <activity android:name=".activities.ProviderEventListActivity"></activity>
+        <activity android:name=".activities.RateFreelancerActivity"></activity>
     </application>
 
 </manifest>
