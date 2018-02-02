@@ -1,7 +1,9 @@
-package c2kxr.host;
+package c2kxr.host.activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import c2kxr.host.R;
 
 public class RegistrationActivity extends AppCompatActivity {
 

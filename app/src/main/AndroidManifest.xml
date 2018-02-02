@@ -17,7 +17,7 @@
 
         <!-- Login Activity -->
         <activity
-            android:name=".LoginActivity"
+            android:name=".activities.LoginActivity"
             android:theme="@style/AppThemeNoTitle">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -27,22 +27,22 @@
         </activity>
         <!-- Main Activity -->
         <activity
-            android:name=".MainActivity"
+            android:name=".activities.MainActivity"
             android:label="Main Activity" />
         <!-- Register Activity -->
         <activity
-            android:name=".RegistrationActivity"
+            android:name=".activities.RegistrationActivity"
             android:label="Register" />
         <!-- Organizer Dashboard Activity -->
         <activity
-            android:name=".OrganizerDashboardActivity"
+            android:name=".activities.OrganizerDashboardActivity"
             android:label="Organizer Dashboard" />
         <!-- Provider Dashboard Activity -->
         <activity
-            android:name=".ProviderDashboardActivity"
+            android:name=".activities.ProviderDashboardActivity"
             android:label="Provider Dashboard" />
         <!-- Add Event Activity -->
-        <activity android:name=".AddEventActivity"
+        <activity android:name=".activities.AddEventActivity"
                 android:label="Host Event"></activity>
     </application>
 

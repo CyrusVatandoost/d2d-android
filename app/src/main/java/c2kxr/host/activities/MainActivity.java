@@ -1,9 +1,11 @@
-package c2kxr.host;
+package c2kxr.host.activities;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+
+import c2kxr.host.R;
 
 public class MainActivity extends AppCompatActivity {
 
