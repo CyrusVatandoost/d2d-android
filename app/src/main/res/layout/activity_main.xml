@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -28,15 +29,16 @@
             android:layout_weight="1"
             android:text="Organize an Event"
             android:textAllCaps="false"
-            android:src="@drawable/ic_event_black_24dp" />
+            android:textSize="18sp" />
 
         <Button
             android:id="@+id/btnProvider"
             android:layout_width="match_parent"
             android:layout_height="126dp"
             android:layout_weight="1"
+            android:text="Offer a Service"
             android:textAllCaps="false"
-            android:text="Offer a Service" />
+            android:textSize="18sp" />
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
