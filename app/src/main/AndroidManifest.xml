@@ -37,11 +37,13 @@
         <!-- Organizer Dashboard Activity -->
         <activity
             android:name=".activities.OrganizerDashboardActivity"
-            android:label="Organizer Dashboard" />
+            android:label="Organizer Dashboard"
+            android:parentActivityName=".activities.MainActivity"/>
         <!-- Provider Dashboard Activity -->
         <activity
             android:name=".activities.ProviderDashboardActivity"
-            android:label="Provider Dashboard" />
+            android:label="Provider Dashboard"
+            android:parentActivityName=".activities.MainActivity"/>
         <!-- Add Event Activity -->
         <activity
             android:name=".activities.AddEventActivity"
