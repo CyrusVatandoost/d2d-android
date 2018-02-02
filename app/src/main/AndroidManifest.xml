@@ -21,7 +21,6 @@
             android:theme="@style/AppThemeNoTitle">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -44,11 +43,14 @@
         <!-- Add Event Activity -->
         <activity
             android:name=".activities.AddEventActivity"
-            android:label="Host Event" />
+            android:label="Host Event"
+            android:parentActivityName=".activities.OrganizerDashboardActivity">
+        </activity>
         <!-- Organizer Event List Activity -->
         <activity
-            android:name=".OrganizerEventListActivity"
-            android:label="My Events"></activity>
+            android:name=".activities.OrganizerEventListActivity"
+            android:label="My Events"
+            android:parentActivityName=".activities.OrganizerDashboardActivity"></activity>
     </application>
 
 </manifest>
