@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
 
 import java.util.ArrayList;
 
@@ -50,6 +51,13 @@ public class OrganizerHomeActivity extends AppCompatActivity {
         });
         recyclerView.setAdapter(eventListAdapter);
 
+        // organizer button opens OrganizerDashboardActivity
+        findViewById(R.id.btnAddEvent).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(OrganizerHomeActivity.this, AddEventActivity.class));
+            }
+        });
 
     }
 }

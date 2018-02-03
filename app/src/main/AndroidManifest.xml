@@ -10,14 +10,13 @@
 
     <application
         android:allowBackup="true"
+        android:hardwareAccelerated="false"
         android:icon="@drawable/hostlogo"
         android:label="Host"
+        android:largeHeap="true"
         android:roundIcon="@drawable/hostlogo"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme"
-        android:hardwareAccelerated="false"
-        android:largeHeap="true"
-        >
+        android:theme="@style/AppTheme">
 
         <!-- Login Activity -->
         <activity
@@ -42,17 +41,21 @@
         <activity
             android:name=".activities.OrganizerDashboardActivity"
             android:label="Organizer Dashboard"
-            android:parentActivityName=".activities.MainActivity"/>
+            android:parentActivityName=".activities.MainActivity" />
         <!-- Provider Dashboard Activity -->
         <activity
             android:name=".activities.ProviderDashboardActivity"
             android:label="Provider Dashboard"
-            android:parentActivityName=".activities.MainActivity"/>
+            android:parentActivityName=".activities.MainActivity" />
         <!-- Add Event Activity -->
         <activity
             android:name=".activities.AddEventActivity"
-            android:label="Host Event"
+            android:label="Step 1: Add Details"
             android:parentActivityName=".activities.OrganizerDashboardActivity" />
+        <!-- Add Servicces Activity -->
+        <activity
+            android:name=".activities.AddServicesActivity"
+            android:label="Step 2: Add Services" />
         <!-- Organizer Event List Activity -->
         <activity
             android:name=".activities.OrganizerEventListActivity"
@@ -67,8 +70,12 @@
             android:name=".activities.FreelancerActivity"
             android:label="Freelancer Details" />
         <!-- Organizer Home Activity -->
-        <activity android:name=".activities.OrganizerHomeActivity"
-            android:parentActivityName=".activities.OrganizerDashboardActivity"/>
+        <activity
+            android:name=".activities.OrganizerHomeActivity"
+            android:parentActivityName=".activities.OrganizerDashboardActivity" />
+        <activity
+            android:name=".activities.AddServiceActivity"
+            android:label="What service are you looking for?"></activity>
     </application>
 
 </manifest>

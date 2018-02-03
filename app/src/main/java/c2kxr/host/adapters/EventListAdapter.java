@@ -37,7 +37,7 @@ public class EventListAdapter extends RecyclerView.Adapter<EventListAdapter.Even
 
     @Override
     public EventsViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.fragment_my_event,parent,false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.fragment_my_event, parent,false);
         EventsViewHolder holder = new EventsViewHolder(view);
         return holder;
     }
@@ -60,7 +60,6 @@ public class EventListAdapter extends RecyclerView.Adapter<EventListAdapter.Even
     public void onAttachedToRecyclerView(RecyclerView recyclerView) {
         super.onAttachedToRecyclerView(recyclerView);
     }
-
 
     class EventsViewHolder extends RecyclerView.ViewHolder {
 
