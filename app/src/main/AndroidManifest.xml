@@ -10,11 +10,14 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/hostlogo"
         android:label="@string/app_name"
         android:roundIcon="@drawable/hostlogo"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        android:hardwareAccelerated="false"
+        android:largeHeap="true"
+        >
 
         <!-- Login Activity -->
         <activity
@@ -53,6 +56,8 @@
             android:label="My Events"
             android:parentActivityName=".activities.OrganizerDashboardActivity" />
         <activity android:name=".activities.EventActivity"></activity>
+        <activity android:name=".activities.OrganizerHomeActivity"
+            android:parentActivityName=".activities.OrganizerDashboardActivity"/>
     </application>
 
 </manifest>

@@ -18,20 +18,7 @@ public class OrganizerDashboardActivity extends AppCompatActivity {
         setContentView(R.layout.activity_organizer_dashboard);
 
         // add event button opens MainActivity
-        findViewById(R.id.btnAddEvent).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(OrganizerDashboardActivity.this, AddEventActivity.class));
-            }
-        });
 
-        // view organizer events button opens MainActivity
-        findViewById(R.id.btnViewEvents).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(OrganizerDashboardActivity.this, OrganizerEventListActivity.class));
-            }
-        });
 
     }
 
