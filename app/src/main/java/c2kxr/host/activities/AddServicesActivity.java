@@ -1,4 +1,4 @@
-package c2kxr.host;
+package c2kxr.host.activities;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -10,10 +10,7 @@ import android.support.v7.widget.RecyclerView;
 import java.util.ArrayList;
 
 import c2kxr.host.R;
-import c2kxr.host.activities.OrganizerHomeActivity;
-import c2kxr.host.adapters.EventListAdapter;
 import c2kxr.host.adapters.ServiceListAdapter;
-import c2kxr.host.classes.Event;
 import c2kxr.host.freelancer.Service;
 
 public class AddServicesActivity extends AppCompatActivity {
@@ -33,7 +30,7 @@ public class AddServicesActivity extends AppCompatActivity {
         services.add(new Service("DJ"));
         services.add(new Service("Bartender"));
         services.add(new Service("Caterer"));
-        services.add(new Service("DJ"));
+        services.add(new Service("Magician"));
         services.add(new Service("Bartender"));
         services.add(new Service("Caterer"));
         services.add(new Service("DJ"));
@@ -50,7 +47,7 @@ public class AddServicesActivity extends AppCompatActivity {
         serviceListAdapter = new ServiceListAdapter(this,services, new ServiceListAdapter.OnItemClickListener() {
             @Override
             public void onItemClick(Service item){
-                Intent intent = new Intent(AddServicesActivity.this,c2kxr.host.activities.EventActivity.class);
+                Intent intent = new Intent(AddServicesActivity.this,c2kxr.host.activities.AddServiceActivity.class);
                 startActivity(intent);
             }
         });

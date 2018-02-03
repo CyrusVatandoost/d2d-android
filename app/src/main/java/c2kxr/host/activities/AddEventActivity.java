@@ -8,7 +8,6 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 
-import c2kxr.host.AddServicesActivity;
 import c2kxr.host.R;
 
 public class AddEventActivity extends AppCompatActivity {

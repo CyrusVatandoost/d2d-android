@@ -53,8 +53,8 @@
             android:parentActivityName=".activities.OrganizerDashboardActivity" />
         <!-- Add Servicces Activity -->
         <activity
-            android:name=".AddServicesActivity"
-            android:label="Step 2: Add Services"></activity>
+            android:name=".activities.AddServicesActivity"
+            android:label="Step 2: Add Services" />
         <!-- Organizer Event List Activity -->
         <activity
             android:name=".activities.OrganizerEventListActivity"
@@ -72,6 +72,9 @@
         <activity
             android:name=".activities.OrganizerHomeActivity"
             android:parentActivityName=".activities.OrganizerDashboardActivity" />
+        <activity
+            android:name=".activities.AddServiceActivity"
+            android:label="What service are you looking for?"></activity>
     </application>
 
 </manifest>
