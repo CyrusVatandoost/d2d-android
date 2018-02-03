@@ -70,9 +70,13 @@
             android:name=".activities.FreelancerActivity"
             android:label="Freelancer Details" />
         <!-- Organizer Home Activity -->
-        <activity
-            android:name=".activities.OrganizerHomeActivity"
-            android:parentActivityName=".activities.OrganizerDashboardActivity" />
+      
+        <activity android:name=".activities.OrganizerHomeActivity"
+            android:parentActivityName=".activities.OrganizerDashboardActivity"/>
+      
+        <activity android:name=".activities.OrganizerEventTemplateSelectionActivity"
+            android:parentActivityName=".activities.OrganizerHomeActivity"/>
+      
         <activity
             android:name=".activities.AddServiceActivity"
             android:label="What service are you looking for?"></activity>

@@ -67,16 +67,17 @@
             android:textSize="18sp"
             android:layout_below="@id/textPassword"/>
 
-        <Button
-            android:id="@+id/btnRegister"
-            style="?android:attr/borderlessButtonStyle"
+        <TextView
+            android:id="@+id/txtRegister"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="7dp"
-            android:background="@color/dirtyWhite"
-            android:text="Sign up"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/dirtyWhite"
+            android:text="Don't have any account yet?"
+            android:gravity="center"
             android:textAllCaps="false"
-            android:textSize="18sp"
-            android:layout_below="@id/btnLogin"/>
+            android:textSize="16sp"
+            android:layout_below="@id/btnLogin"
+            />
     </RelativeLayout>
 </android.support.constraint.ConstraintLayout>

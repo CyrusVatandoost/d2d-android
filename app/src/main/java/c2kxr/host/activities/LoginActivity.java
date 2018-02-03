@@ -25,7 +25,7 @@ public class LoginActivity extends AppCompatActivity {
         });
 
         // registration button opens RegistrationActivity
-        findViewById(R.id.btnRegister).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.txtRegister).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(LoginActivity.this, RegistrationActivity.class));
