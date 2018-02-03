@@ -1,10 +1,9 @@
-package c2kxr.host.activities;
+package c2kxr.host.freelancer;
 
 import android.content.Context;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
-import com.android.volley.toolbox.ImageLoader;
 import com.android.volley.toolbox.Volley;
 
 /**

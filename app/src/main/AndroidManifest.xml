@@ -11,7 +11,7 @@
     <application
         android:allowBackup="true"
         android:icon="@drawable/hostlogo"
-        android:label="@string/app_name"
+        android:label="Host"
         android:roundIcon="@drawable/hostlogo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
@@ -32,7 +32,7 @@
         <!-- Main Activity -->
         <activity
             android:name=".activities.MainActivity"
-            android:label="Main Activity" />
+            android:label="Host" />
         <!-- Register Activity -->
         <activity
             android:name=".activities.RegistrationActivity"
@@ -40,22 +40,32 @@
         <!-- Organizer Dashboard Activity -->
         <activity
             android:name=".activities.OrganizerDashboardActivity"
-            android:label="Organizer Dashboard" />
+            android:label="Organizer Dashboard"
+            android:parentActivityName=".activities.MainActivity"/>
         <!-- Provider Dashboard Activity -->
         <activity
             android:name=".activities.ProviderDashboardActivity"
-            android:label="Provider Dashboard" />
+            android:label="Provider Dashboard"
+            android:parentActivityName=".activities.MainActivity"/>
         <!-- Add Event Activity -->
         <activity
             android:name=".activities.AddEventActivity"
             android:label="Host Event"
-            android:parentActivityName=".activities.OrganizerDashboardActivity"></activity>
+            android:parentActivityName=".activities.OrganizerDashboardActivity" />
         <!-- Organizer Event List Activity -->
         <activity
             android:name=".activities.OrganizerEventListActivity"
             android:label="My Events"
             android:parentActivityName=".activities.OrganizerDashboardActivity" />
-        <activity android:name=".activities.EventActivity"></activity>
+        <!-- Event Details Activity -->
+        <activity
+            android:name=".activities.EventActivity"
+            android:label="Event Name Here" />
+        <!-- Freelancer Details Activity -->
+        <activity
+            android:name=".activities.FreelancerActivity"
+            android:label="Freelancer Details" />
+        <!-- Organizer Home Activity -->
         <activity android:name=".activities.OrganizerHomeActivity"
             android:parentActivityName=".activities.OrganizerDashboardActivity"/>
     </application>
