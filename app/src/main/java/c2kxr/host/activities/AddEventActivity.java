@@ -16,6 +16,14 @@ public class AddEventActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_event);
+
+        // organizer button opens OrganizerDashboardActivity
+        findViewById(R.id.btnAddEvent).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(AddEventActivity.this, AddServicesActivity.class));
+            }
+        });
     }
 
     @Override
