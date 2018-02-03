@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 
+import c2kxr.host.AddServicesActivity;
 import c2kxr.host.R;
 
 public class AddEventActivity extends AppCompatActivity {
@@ -16,6 +17,14 @@ public class AddEventActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_event);
+
+        // organizer button opens OrganizerDashboardActivity
+        findViewById(R.id.btnAddEvent).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(AddEventActivity.this, AddServicesActivity.class));
+            }
+        });
     }
 
     @Override

@@ -20,6 +20,17 @@ public class Service {
         this.serviceMaxPrice = serviceMaxPrice;
     }
 
+    public Service(String name, String description, int minPrice, int maxPrice) {
+        this.serviceName = name;
+        this.serviceDesc = description;
+        this.serviceMinPrice = minPrice;
+        this.serviceMaxPrice = maxPrice;
+    }
+
+    public Service(String name){
+        this.serviceName = name;
+    }
+
     public void setServiceId(int serviceId) {
         this.serviceId = serviceId;
     }
