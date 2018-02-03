@@ -18,7 +18,7 @@
             android:layout_height="180dp"
             android:adjustViewBounds="true"
             android:scaleType="fitXY"
-            android:src="@drawable/sample_party" />
+            android:src="@drawable/sample_party_min" />
 
         <TextView
             android:id="@+id/eventTitle"

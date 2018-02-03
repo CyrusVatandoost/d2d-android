@@ -31,7 +31,8 @@
         <!-- Main Activity -->
         <activity
             android:name=".activities.MainActivity"
-            android:label="Host" />
+            android:label="Host"
+            android:theme="@style/Theme.Design.NoActionBar"/>
         <!-- Register Activity -->
         <activity
             android:name=".activities.RegistrationActivity"
