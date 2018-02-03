@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
 
 import java.util.ArrayList;
 
@@ -77,6 +78,13 @@ public class AddServicesActivity extends AppCompatActivity {
             }
         });
         recyclerViewBox.setAdapter(serviceBoxListAdapter);
+
+        findViewById(R.id.btnPostEvent).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(AddServicesActivity.this, EventActivity.class));
+            }
+        });
 
     }
 }
