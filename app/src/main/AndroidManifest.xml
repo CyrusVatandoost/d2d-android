@@ -69,6 +69,8 @@
         <!-- Organizer Home Activity -->
         <activity android:name=".activities.OrganizerHomeActivity"
             android:parentActivityName=".activities.OrganizerDashboardActivity"/>
+        <activity android:name=".activities.OrganizerEventTemplateSelectionActivity"
+            android:parentActivityName=".activities.OrganizerHomeActivity"/>
     </application>
 
 </manifest>
