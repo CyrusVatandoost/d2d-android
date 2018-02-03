@@ -30,17 +30,18 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <Button
-                android:id="@+id/button7"
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerQueueServices"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Button" />
+                android:layout_height="wrap_content" />
+
         </LinearLayout>
 
         <Button
             android:id="@+id/button5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Save Selection" />
+            android:text="Post Event Details"
+            android:textAllCaps="false"/>
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
