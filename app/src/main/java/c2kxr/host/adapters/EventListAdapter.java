@@ -29,7 +29,6 @@ public class EventListAdapter extends RecyclerView.Adapter<EventListAdapter.Even
     private Context context;
 
     public EventListAdapter(Context context, ArrayList<Event> events, OnItemClickListener listener) {
-
         this.context = context;
         this.events = events;
         this.listener = listener;

@@ -13,6 +13,7 @@ import java.util.ArrayList;
 import c2kxr.host.R;
 import c2kxr.host.adapters.ServiceBoxListAdapter;
 import c2kxr.host.adapters.ServiceListAdapter;
+import c2kxr.host.freelancer.Event;
 import c2kxr.host.freelancer.Service;
 
 public class AddServicesActivity extends AppCompatActivity {
@@ -39,13 +40,9 @@ public class AddServicesActivity extends AppCompatActivity {
         services.add(new Service("Caterer"));
         services.add(new Service("Magician"));
         services.add(new Service("Bartender"));
-        services.add(new Service("Caterer"));
-        services.add(new Service("DJ"));
-        services.add(new Service("Bartender"));
-        services.add(new Service("Caterer"));
-        services.add(new Service("DJ"));
-        services.add(new Service("Bartender"));
-        services.add(new Service("Caterer"));
+        services.add(new Service("Cameraman"));
+        services.add(new Service("Singer"));
+        services.add(new Service("Custom"));
         recyclerView.setHasFixedSize(true);
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         linearLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
@@ -74,7 +71,7 @@ public class AddServicesActivity extends AppCompatActivity {
         serviceBoxListAdapter = new ServiceBoxListAdapter(this, servicesToBid, new ServiceBoxListAdapter.OnItemClickListener() {
             @Override
             public void onItemClick(Service item){
-                recyclerViewBox.setHasFixedSize(true);
+                startActivity(new Intent(AddServicesActivity.this, BidsActivity.class));
             }
         });
         recyclerViewBox.setAdapter(serviceBoxListAdapter);

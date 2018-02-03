@@ -32,7 +32,7 @@
         <activity
             android:name=".activities.MainActivity"
             android:label="Host"
-            android:theme="@style/Theme.Design.NoActionBar"/>
+            android:theme="@style/Theme.Design.NoActionBar" />
         <!-- Register Activity -->
         <activity
             android:name=".activities.RegistrationActivity"
@@ -70,16 +70,17 @@
             android:name=".activities.FreelancerActivity"
             android:label="Freelancer Details" />
         <!-- Organizer Home Activity -->
-      
-        <activity android:name=".activities.OrganizerHomeActivity"
-            android:parentActivityName=".activities.OrganizerDashboardActivity"/>
-      
-        <activity android:name=".activities.OrganizerEventTemplateSelectionActivity"
-            android:parentActivityName=".activities.OrganizerHomeActivity"/>
-      
+
+        <activity
+            android:name=".activities.OrganizerHomeActivity"
+            android:parentActivityName=".activities.OrganizerDashboardActivity" />
+        <activity
+            android:name=".activities.OrganizerEventTemplateSelectionActivity"
+            android:parentActivityName=".activities.OrganizerHomeActivity" />
         <activity
             android:name=".activities.AddServiceActivity"
-            android:label="What service are you looking for?"></activity>
+            android:label="What service are you looking for?" />
+        <activity android:name=".activities.BidsActivity"></activity>
     </application>
 
 </manifest>
