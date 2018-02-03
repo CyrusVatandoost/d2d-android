@@ -49,7 +49,6 @@ public class AddServicesActivity extends AppCompatActivity {
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         linearLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
         recyclerView.setLayoutManager(linearLayoutManager);
-
         serviceListAdapter = new ServiceListAdapter(this,services, new ServiceListAdapter.OnItemClickListener() {
             @Override
             public void onItemClick(Service item){
@@ -71,7 +70,6 @@ public class AddServicesActivity extends AppCompatActivity {
         recyclerViewBox.setItemAnimator(new DefaultItemAnimator());
         linearLayoutManagerForRecyclerViewBox = new LinearLayoutManager(this);
         recyclerViewBox.setLayoutManager(linearLayoutManagerForRecyclerViewBox);
-
         serviceBoxListAdapter = new ServiceBoxListAdapter(this, servicesToBid, new ServiceBoxListAdapter.OnItemClickListener() {
             @Override
             public void onItemClick(Service item){
