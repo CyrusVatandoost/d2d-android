@@ -10,6 +10,7 @@ import android.support.v7.widget.RecyclerView;
 import java.util.ArrayList;
 
 import c2kxr.host.R;
+import c2kxr.host.adapters.ServiceBoxListAdapter;
 import c2kxr.host.adapters.ServiceListAdapter;
 import c2kxr.host.freelancer.Service;
 
@@ -19,6 +20,11 @@ public class AddServicesActivity extends AppCompatActivity {
     private ServiceListAdapter serviceListAdapter;
     private ArrayList<Service> services;
     private LinearLayoutManager linearLayoutManager;
+
+    private RecyclerView recyclerViewBox;
+    private ArrayList<Service> servicesToBid;
+    private ServiceBoxListAdapter serviceBoxListAdapter;
+    private LinearLayoutManager linearLayoutManagerForRecyclerViewBox;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,5 +58,27 @@ public class AddServicesActivity extends AppCompatActivity {
             }
         });
         recyclerView.setAdapter(serviceListAdapter);
+
+        recyclerViewBox = findViewById(R.id.recyclerBoxViewServices);
+        servicesToBid = new ArrayList<>();
+        servicesToBid.add(new Service("DJ that can jump 10 times"));
+        servicesToBid.add(new Service("Magician who can fly"));
+        servicesToBid.add(new Service("Any chef really"));
+        servicesToBid.add(new Service("DJ who can play Tropical House EDM"));
+        servicesToBid.add(new Service("Italian Chef"));
+        servicesToBid.add(new Service("Valet for a night"));
+        recyclerViewBox.setHasFixedSize(true);
+        recyclerViewBox.setItemAnimator(new DefaultItemAnimator());
+        linearLayoutManagerForRecyclerViewBox = new LinearLayoutManager(this);
+        recyclerViewBox.setLayoutManager(linearLayoutManagerForRecyclerViewBox);
+
+        serviceBoxListAdapter = new ServiceBoxListAdapter(this, servicesToBid, new ServiceBoxListAdapter.OnItemClickListener() {
+            @Override
+            public void onItemClick(Service item){
+                recyclerViewBox.setHasFixedSize(true);
+            }
+        });
+        recyclerViewBox.setAdapter(serviceBoxListAdapter);
+
     }
 }
