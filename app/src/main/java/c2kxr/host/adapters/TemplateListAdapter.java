@@ -21,7 +21,7 @@ import c2kxr.host.classes.Template;
 public class TemplateListAdapter extends RecyclerView.Adapter<TemplateListAdapter.TemplateListViewHolder> {
 
     public interface OnItemClickListener {
-        void onItemClick(Event item);
+        void onItemClick(Template item);
     }
 
     private ArrayList<Template> temps;
@@ -46,7 +46,7 @@ public class TemplateListAdapter extends RecyclerView.Adapter<TemplateListAdapte
         Template template = temps.get(position);
         //holder.templateImage.setImageDrawable(template.getTemplateImage());
         holder.templateName.setText(template.getTemplateName());
-        holder.bind(template listener);
+        holder.bind(template, listener);
     }
 
     @Override
@@ -67,7 +67,7 @@ public class TemplateListAdapter extends RecyclerView.Adapter<TemplateListAdapte
             templateName =  itemView.findViewById(R.id.templateName);
         }
 
-        public void bind(final Event item, final TemplateListAdapter.OnItemClickListener listener) {
+        public void bind(final Template item, final TemplateListAdapter.OnItemClickListener listener) {
 
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override

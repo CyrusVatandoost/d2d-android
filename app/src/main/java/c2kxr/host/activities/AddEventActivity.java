@@ -5,17 +5,31 @@ import android.support.v4.app.NavUtils;
 import android.support.v4.app.TaskStackBuilder;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.DefaultItemAnimator;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.MenuItem;
 import android.view.View;
 
+import java.util.ArrayList;
+
 import c2kxr.host.R;
+import c2kxr.host.adapters.EventListAdapter;
+import c2kxr.host.adapters.TemplateListAdapter;
+import c2kxr.host.classes.Event;
+import c2kxr.host.classes.Template;
 
 public class AddEventActivity extends AppCompatActivity {
 
+    private RecyclerView recyclerView;
+    private TemplateListAdapter templateListAdapter;
+    private ArrayList<Template> temps;
+    private LinearLayoutManager linearLayoutManager;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_event);
+
 
         // organizer button opens OrganizerDashboardActivity
         findViewById(R.id.btnAddEvent).setOnClickListener(new View.OnClickListener() {
@@ -24,6 +38,26 @@ public class AddEventActivity extends AppCompatActivity {
                 startActivity(new Intent(AddEventActivity.this, AddServicesActivity.class));
             }
         });
+        recyclerView = findViewById(R.id.templateList);
+        temps = new ArrayList<>();
+        temps.add(new Template("Party","This Party"));
+        temps.add(new Template("Concert","This Party"));
+        temps.add(new Template("Fun Run","This Party"));
+
+        recyclerView.setHasFixedSize(true);
+        recyclerView.setItemAnimator(new DefaultItemAnimator());
+
+        linearLayoutManager = new LinearLayoutManager(this);
+        recyclerView.setLayoutManager(linearLayoutManager);
+
+        TemplateListAdapter templateListAdapter = new TemplateListAdapter(this,temps, new TemplateListAdapter.OnItemClickListener(){
+            @Override
+            public void onItemClick(Template item){
+                Intent intent = new Intent(AddEventActivity.this,c2kxr.host.activities.AddServiceActivity.class);
+                startActivity(intent);
+            }
+        });
+        recyclerView.setAdapter(templateListAdapter);
     }
 
     @Override
