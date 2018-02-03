@@ -10,11 +10,14 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/hostlogo"
         android:label="Host"
         android:roundIcon="@drawable/hostlogo"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        android:hardwareAccelerated="false"
+        android:largeHeap="true"
+        >
 
         <!-- Login Activity -->
         <activity
@@ -62,6 +65,9 @@
         <activity
             android:name=".activities.FreelancerActivity"
             android:label="Freelancer Details" />
+        <!-- Organizer Home Activity -->
+        <activity android:name=".activities.OrganizerHomeActivity"
+            android:parentActivityName=".activities.OrganizerDashboardActivity"/>
     </application>
 
 </manifest>
