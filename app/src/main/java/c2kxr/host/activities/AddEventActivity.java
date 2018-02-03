@@ -53,7 +53,7 @@ public class AddEventActivity extends AppCompatActivity {
         TemplateListAdapter templateListAdapter = new TemplateListAdapter(this,temps, new TemplateListAdapter.OnItemClickListener(){
             @Override
             public void onItemClick(Template item){
-                Intent intent = new Intent(AddEventActivity.this,c2kxr.host.activities.AddServiceActivity.class);
+                Intent intent = new Intent(AddEventActivity.this,c2kxr.host.activities.AddServicesActivity.class);
                 startActivity(intent);
             }
         });
